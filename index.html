@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Campus Car Washing Center</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/887a835504.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <button id="clientes">clientes</button>
+    <div id ="gestionClientes" >
+        <div class="ratio ratio-16x9">
+            <img src="">
+            <main>
+              <div class="container mt5 pb-5 pt-5">
+                <div class="row">
+                  <div class="offset-md-3 col-md-6"></div>
+                  <input type="text" class="form-control" id="search" placeholder="BUSCAR..." oninput="filterTable()">
+                </div>
+              </div>
+                <form class="form" id="formulario">
+                    <h3 class="register">REGISTRATE AHORA</h2>
+                    <input class="form-control input-group-text" id="numId" type="number" placeholder="NÚMERO DE IDENTIFICACIÓN">
+                    <input class="form-control input-group-text" id="nombres" type="text" placeholder="NOMBRES">
+                    <input class="form-control input-group-text" id="apellidos" type="text" placeholder="APELLIDOS">
+                    <input class="form-control input-group-text" id="placa" type="number" placeholder="PLACA">
+                    <input class="form-control input-group-text" id="tipo" type="text" placeholder="TIPO DE VEHICULO">
+                    <input class="form-control input-group-text" id="tel" type="number" placeholder="TELÉFONO">
+                    <input class="form-control input-group-text" id="email" type="email" placeholder="EMAIL">
+                    <button id="btn" type="submit" class="btn btn-outline-dark mb-4 bttn">CREAR</button>
+                </form>
+                <table class="table table-dark tablaClientes" id="tablaClientes">
+                    <thead>
+                        <tr>
+                            <th>NUM IDENTIFICACIÓN</th>
+                            <th>NOMBRES</th>
+                            <th>APELLIDOS</th>
+                            <th>PLACA</th>
+                            <th>TIPO</th>
+                            <th>EMAIL</th>
+                            <th>TELÉFONO</th>
+                            <th>ELIMINAR</th>
+                            <th>EDITAR</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </main>
+        </div>
+    </div>
+
+    <div id ="gestionSpa" >
+        <div class="ratio ratio-16x9">
+            <img src="">
+            <main>
+                <div class="container mt5 pb-5 pt-5">
+                  </div>
+                    <form class="form" id="formularioSpa">
+                        <h3 class="register">CREA TU SPA</h2>
+                        <input class="form-control input-group-text" id="nombreSpa" type="text" placeholder="NOMBRE DEL SERVICIO">
+                        <input class="form-control input-group-text" id="descripcionSpa" type="text" placeholder="DESCRIPCION DEL SERVICIO">
+                        <input class="form-control input-group-text" id="valorSpa" type="number" placeholder="VALOR DEL SERVICIO">
+                        <input class="form-control input-group-text" id="puntosSpa" type="number" placeholder="PUNTOS POR EL SERVICIO">
+                        <button id="bton" type="submit" class="btn btn-outline-dark mb-4 bttn">CREAR</button>
+                    </form>
+                    <table class="table table-dark tablaClientes" id="tablaSpa">
+                        <thead>
+                            <tr>
+                                <th>ID DEL SERVICIO</th>
+                                <th>NOMBRE DEL SERVICIO</th>
+                                <th>DESCRIPCION DEL SERVICIO</th>
+                                <th>VALOR DEL SERVICIO</th>
+                                <th>PUNTOS POR EL SERVICIO</th>
+                                <th>ELIMINAR</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+            </main>
+        </div>
+    </div>
+    <div id="connt"  >
+        <div class="ratio ratio-16x9">
+          <main>
+            <form class="forrm">
+            <select class="form-select" id="cliente" aria-label="Default select example" >
+              <option selected>SELECCIONA AL CLIENTE</option>
+            </select>
+            <select class="form-select" id="spa" aria-label="Default select example">
+              <option selected>SELECCIONA EL SPA</option>
+            </select>
+          </form>
+          <div class="text-center">
+            <button id="botonn" type="button" class="bottonn btn btn-outline-dark mb-4 bttn">COMPRAR</button>
+          </div>
+          <div class="d-flex justify-content-center">
+            <div id="resumenServicio" class="resumenServi text-center w-50">
+              <h5 class="compra">RESUMEN DE TU COMPRA</h5 >
+              <p>CLIENTE: <span id="clienteServis"></span></p>
+              <p>SERVICIO: <span id ="servicio"></span></p>
+              <p>PRECIO: <span id ="valorServicio"></span></p>
+              <p>DESCUENTO: <span id ="descuentoServicio"></span></p>
+              <p>IVA: <span id ="ivaServicio"></span></p>
+              <p>VALOR TOTAL: <span id ="valorTotal"></span></p>
+              <p>PUNTOS DE FIDELIZACIÓN: <span id ="puntosServicio"></span></p>
+            </div>
+        </div>
+          </main>
+        </div>
+      </div>
+      
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/887a835504.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
